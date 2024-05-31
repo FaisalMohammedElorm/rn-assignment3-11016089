@@ -11,6 +11,7 @@ const App = () => {
     <View style={styles.main}>
     <View style={styles.header}>
       <View style={styles.salutationContainer}>
+      {/** Welcome Section */}
         <Text style={styles.salutation}>Hello, Devs </Text>
         <View style={styles.subTextContainer}>
         <Text style={styles.subText}>14 tasks today</Text>
@@ -20,7 +21,7 @@ const App = () => {
           <Image style={styles.personImage} source={require("./assets/person.png")}/>
       </View> 
     </View>
-     
+     {/** The Search Bar  */}
      <View style={styles.textInputContainer}>
      <TouchableOpacity>
      <View style={styles.icon}>
@@ -36,6 +37,7 @@ const App = () => {
         onChangeText = {text => setText(text)}
         value={text}
       />
+      {/** Filter Section */}
       <TouchableOpacity>
       <View style={{marginLeft:60 }}>
         <Image source={require("./assets/Filter.png")}/>
@@ -45,6 +47,7 @@ const App = () => {
 
        
      </View>
+     {/** Categories Section */}
      <View style={{marginTop:50, marginLeft:20}}>
       <Text style={{fontSize: 25, fontWeight:"600", marginLeft: 10}}>Categories</Text>
       <FlatList
